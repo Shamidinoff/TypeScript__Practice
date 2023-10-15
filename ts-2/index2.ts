@@ -10,6 +10,8 @@ const userNameData: string = "Daurenbek Shamidinov";
 //   }
 // }
 
+// №
+
 const logBrtMsg = (
   isBirthday: boolean,
   userName: string,
