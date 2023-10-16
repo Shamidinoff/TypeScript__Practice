@@ -2,10 +2,17 @@
 // let ageData: number = 29;
 // const userNameData: string = "Daurenbek Shamidinov";
 
+let salary: number; // если не задать тип вручную то тип будет any и в будущем появиться ошибка, поэтому строго нужно задать соответствующий
+salary = 5000; // сюда уже нельзя писать текст, тип числовой
+
 const userData =
   '{"isBirthdayData": true, "ageData": 29, "userNameData": "Daurenbek Shamidinov"}';
 
-const userObj = JSON.parse(userData);
+const userObj: {
+  isBirthdayData: boolean;
+  userNameData: string;
+  ageData: number;
+} = JSON.parse(userData);
 
 function logBrtMsg(isBirthday: boolean, userName: string, age: number): string {
   if (isBirthday) {
