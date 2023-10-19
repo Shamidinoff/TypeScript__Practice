@@ -12,15 +12,18 @@ const createError = (msg: string) => {
   throw new Error(msg);
 };
 
-function logBrtMsg(isBirthday: boolean, userName: string, age: number): string {
-  if (isBirthday === true) {
-    return `Congrats ${userName.toUpperCase()}, age ${age + 1}`;
-  } else if (isBirthday === false) {
-    return "Too bad";
+function logBrtMsg(data: {
+  isBirthday: boolean;
+  userName: string;
+  age: number;
+}): string {
+  if (data.isBirthday === true) {
+    return `Congrats ${data.userName.toUpperCase()}, age: ${data.age + 1)}`;
+  } else  {
+    
+    return createError("Error");
   }
-  return createError("Error");
 }
-
 logBrtMsg(isBirthdayData, userNameData, ageData);
 
-// const smth: never = null;
+// const smth: never = null; +++
