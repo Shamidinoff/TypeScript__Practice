@@ -44,3 +44,4 @@ function logValue(x) {
         console.log(x.trim());
     }
 }
+// union
