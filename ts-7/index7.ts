@@ -26,4 +26,4 @@ function logBrtMsg(data: {
 }
 logBrtMsg(isBirthdayData, userNameData, ageData);
 
-// const smth: never = null; 
+// const smth: never = null; +
