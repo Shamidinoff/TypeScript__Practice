@@ -24,3 +24,4 @@ function createAnimation(id, animNme, timingFunc, duration, iterCount) {
     // elem.style.animation = `${animNme} ${timingFunc} ${duration} ${iterCount}`;
 }
 createAnimation('id', 'fade', 'ease-in', 5, 'infinite');
+//

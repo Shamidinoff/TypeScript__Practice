@@ -41,3 +41,5 @@ console.log(`${animNme} ${timingFunc} ${duration} ${iterCount}`);
 }
 
 createAnimation('id', 'fade', 'ease-in', 5, 'infinite');
+
+//
